@@ -12,16 +12,24 @@
 		F803CA131D6B4F9300204A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F803CA111D6B4F9300204A82 /* Main.storyboard */; };
 		F803CA151D6B4F9300204A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F803CA141D6B4F9300204A82 /* Assets.xcassets */; };
 		F803CA181D6B4F9300204A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F803CA161D6B4F9300204A82 /* LaunchScreen.storyboard */; };
+		F803CA261D6F172600204A82 /* PicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F803CA251D6F172600204A82 /* PicViewController.swift */; };
+		F803CA2B1D6F3B0800204A82 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F803CA281D6F3B0800204A82 /* 1.jpg */; };
+		F803CA2C1D6F3B0800204A82 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F803CA291D6F3B0800204A82 /* 2.jpg */; };
+		F803CA2D1D6F3B0800204A82 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F803CA2A1D6F3B0800204A82 /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F803CA0A1D6B4F9300204A82 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F803CA0D1D6B4F9300204A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F803CA0F1D6B4F9300204A82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F803CA121D6B4F9300204A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F803CA141D6B4F9300204A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F803CA171D6B4F9300204A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F803CA191D6B4F9300204A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F803CA251D6F172600204A82 /* PicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicViewController.swift; sourceTree = "<group>"; };
+		F803CA271D6F380700204A82 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F803CA281D6F3B0800204A82 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F803CA291D6F3B0800204A82 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F803CA2A1D6F3B0800204A82 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,16 +47,11 @@
 			isa = PBXGroup;
 			children = (
 				F803CA0C1D6B4F9300204A82 /* SlideshowApp */,
-				F803CA0B1D6B4F9300204A82 /* Products */,
+				F803CA271D6F380700204A82 /* SlideshowApp.app */,
+				F803CA281D6F3B0800204A82 /* 1.jpg */,
+				F803CA291D6F3B0800204A82 /* 2.jpg */,
+				F803CA2A1D6F3B0800204A82 /* 3.jpg */,
 			);
-			sourceTree = "<group>";
-		};
-		F803CA0B1D6B4F9300204A82 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F803CA0A1D6B4F9300204A82 /* SlideshowApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F803CA0C1D6B4F9300204A82 /* SlideshowApp */ = {
@@ -57,6 +60,7 @@
 				F803CA0D1D6B4F9300204A82 /* AppDelegate.swift */,
 				F803CA0F1D6B4F9300204A82 /* ViewController.swift */,
 				F803CA111D6B4F9300204A82 /* Main.storyboard */,
+				F803CA251D6F172600204A82 /* PicViewController.swift */,
 				F803CA141D6B4F9300204A82 /* Assets.xcassets */,
 				F803CA161D6B4F9300204A82 /* LaunchScreen.storyboard */,
 				F803CA191D6B4F9300204A82 /* Info.plist */,
@@ -81,7 +85,7 @@
 			);
 			name = SlideshowApp;
 			productName = SlideshowApp;
-			productReference = F803CA0A1D6B4F9300204A82 /* SlideshowApp.app */;
+			productReference = F803CA271D6F380700204A82 /* SlideshowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +113,7 @@
 				Base,
 			);
 			mainGroup = F803CA011D6B4F9300204A82;
-			productRefGroup = F803CA0B1D6B4F9300204A82 /* Products */;
+			productRefGroup = F803CA011D6B4F9300204A82;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -124,6 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F803CA181D6B4F9300204A82 /* LaunchScreen.storyboard in Resources */,
+				F803CA2B1D6F3B0800204A82 /* 1.jpg in Resources */,
+				F803CA2C1D6F3B0800204A82 /* 2.jpg in Resources */,
+				F803CA2D1D6F3B0800204A82 /* 3.jpg in Resources */,
 				F803CA151D6B4F9300204A82 /* Assets.xcassets in Resources */,
 				F803CA131D6B4F9300204A82 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			files = (
 				F803CA101D6B4F9300204A82 /* ViewController.swift in Sources */,
 				F803CA0E1D6B4F9300204A82 /* AppDelegate.swift in Sources */,
+				F803CA261D6F172600204A82 /* PicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				F803CA1E1D6B4F9300204A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
