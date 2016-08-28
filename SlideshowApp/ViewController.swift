@@ -39,8 +39,8 @@ class ViewController: UIViewController {
     
     @IBAction func Playbtn(sender: AnyObject) {
         if flagplay == 1{
-    nextbtnv.hidden = true
-    prvbtnv.hidden = true
+            nextbtnv.hidden = true
+            prvbtnv.hidden = true
             flagplay -= 1
             timer = NSTimer.scheduledTimerWithTimeInterval(2.0,target: self,selector:#selector(ViewController.playing),userInfo: nil,repeats: true)
             Playbtnv.setTitle("||", forState:.Normal)
@@ -64,27 +64,26 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let picview = segue.destinationViewController as! PicViewController
         picview.imagenum2 = imagenum
-            timer.invalidate()
-        }
+    }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
     @IBAction func unwind(segue:UIStoryboardSegue){
     }
     
     func playing(){
-            if imagenum == maximagenum {
-                imagenum = 1
-                viewDidLoad()
-            }else{
-                imagenum += 1
-                viewDidLoad()
-            }
+        if imagenum == maximagenum {
+            imagenum = 1
+            viewDidLoad()
+        }else{
+            imagenum += 1
+            viewDidLoad()
+        }
     }
     
 }
