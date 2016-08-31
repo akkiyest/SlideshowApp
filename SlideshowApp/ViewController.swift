@@ -17,20 +17,20 @@ class ViewController: UIViewController {
     
     @IBAction func Prevbtn(sender: AnyObject) {
         if imagenum == 1 {
-            imagenum = 3
-            viewDidLoad()
+            imagenum = maximagenum
+            showpicture()
         }else{
             imagenum -= 1
-            viewDidLoad()
+            showpicture()
         }
     }
     @IBAction func Nextbtn(sender: AnyObject) {
         if imagenum == maximagenum {
             imagenum = 1
-            viewDidLoad()
+            showpicture()
         }else{
             imagenum += 1
-            viewDidLoad()
+            showpicture()
         }
     }
     @IBOutlet weak var prvbtnv: UIButton!
@@ -57,10 +57,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Imageview.image = UIImage(named:imagenum.description+".jpg")
+        showpicture()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func showpicture() {
+        Imageview.image = UIImage(named:imagenum.description+".jpg")
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let picview = segue.destinationViewController as! PicViewController
         picview.imagenum2 = imagenum
@@ -79,10 +82,10 @@ class ViewController: UIViewController {
     func playing(){
         if imagenum == maximagenum {
             imagenum = 1
-            viewDidLoad()
+            showpicture()
         }else{
             imagenum += 1
-            viewDidLoad()
+            showpicture()
         }
     }
     

@@ -26,7 +26,7 @@
                                     <action selector="Nextbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSD-Dg-ZHc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-Qv-Rkb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-Qv-Rkb">
                                 <rect key="frame" x="70" y="50" width="460" height="322"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERm-e7-BrL">
@@ -56,9 +56,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CtK-mS-M6C" firstAttribute="top" secondItem="cWM-Qv-Rkb" secondAttribute="bottom" constant="64" id="2TV-4t-RGU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cWM-Qv-Rkb" secondAttribute="trailing" constant="50" id="6qO-Pr-Zaa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jNg-94-r6p" secondAttribute="bottom" constant="110" id="9HZ-Me-usg"/>
                             <constraint firstItem="ERm-e7-BrL" firstAttribute="leading" secondItem="CtK-mS-M6C" secondAttribute="trailing" constant="64" id="A6C-a0-V34"/>
+                            <constraint firstItem="jNg-94-r6p" firstAttribute="top" secondItem="Vfa-Mz-yYy" secondAttribute="bottom" constant="64" id="Dm8-rn-gi8"/>
                             <constraint firstItem="Vfa-Mz-yYy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="E7n-Iw-QK4"/>
                             <constraint firstItem="cWM-Qv-Rkb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="EfT-p8-1JM"/>
                             <constraint firstItem="Vfa-Mz-yYy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="FKg-EF-vyw"/>
@@ -69,6 +71,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Vfa-Mz-yYy" secondAttribute="trailing" constant="50" id="hsu-gl-ylj"/>
                             <constraint firstItem="cWM-Qv-Rkb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="jfD-ai-VuO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vfa-Mz-yYy" secondAttribute="bottom" constant="228" id="mNg-n0-zhh"/>
+                            <constraint firstItem="ERm-e7-BrL" firstAttribute="top" secondItem="cWM-Qv-Rkb" secondAttribute="bottom" constant="61" id="mSg-me-g6Z"/>
                             <constraint firstItem="ERm-e7-BrL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oer-Nq-0CV"/>
                         </constraints>
                     </view>
